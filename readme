@@ -1,0 +1,9 @@
+peeweep's overlay
+
+How to use:
+
+  sudo su
+  echo 'app-portage/layman sync-plugin-portage git' > /etc/portage/package.use/layman
+  emerge --ask --quiet app-portage/layman
+  layman -o https://codeberg.org/peeweep/gentoo-overlay/raw/branch/master/layman.xml -f -a peeweep
+
