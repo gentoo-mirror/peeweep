@@ -6,4 +6,4 @@ How to use:
   echo 'app-portage/layman sync-plugin-portage git' > /etc/portage/package.use/layman
   emerge --ask --quiet app-portage/layman
   layman -o https://codeberg.org/peeweep/gentoo-overlay/raw/branch/master/layman.xml -f -a peeweep
-
+  echo '*/*::peeweep ~amd64' > /etc/portage/package.accept_keywords/supersm
