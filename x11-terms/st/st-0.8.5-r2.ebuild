@@ -29,6 +29,7 @@ BDEPEND="virtual/pkgconfig"
 PATCHES=(
 	"${FILESDIR}"/st-defaultfontsize-20210225-4ef0cbd.diff
 	"${FILESDIR}"/st-dracula-0.8.5.diff
+	"${FILESDIR}"/st-scrollback-0.8.5.diff
 )
 
 src_prepare() {
