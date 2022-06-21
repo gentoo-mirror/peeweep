@@ -1,4 +1,4 @@
---- src/VBox/HostDrivers/VBoxNetFlt/linux/VBoxNetFlt-linux.c.orig	2022-06-21 17:21:19.946851578 +0800
+--- src/VBox/HostDrivers/VBoxNetFlt/linux/VBoxNetFlt-linux.c	2022-06-21 17:21:19.946851578 +0800
 +++ src/VBox/HostDrivers/VBoxNetFlt/linux/VBoxNetFlt-linux.c	2022-06-21 17:21:40.388851386 +0800
 @@ -2311,7 +2311,13 @@
                  vboxNetFltDumpPacket(pSG, true, "host", (fDst & INTNETTRUNKDIR_WIRE) ? 0 : 1);
