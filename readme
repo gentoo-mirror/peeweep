@@ -2,16 +2,5 @@ peeweep's overlay
 
 How to use:
 
-1. layman:
-  sudo su
-  echo 'app-portage/layman sync-plugin-portage git' > /etc/portage/package.use/layman
-  emerge --ask --quiet app-portage/layman
-  layman -o https://codeberg.org/peeweep/gentoo-overlay/raw/branch/master/layman.xml -f -a peeweep
-  echo '*/*::peeweep ~amd64' > /etc/portage/package.accept_keywords/peeweep
-
-2. custom repos.conf:
-
-  sudo su
-  wget https://codeberg.org/peeweep/gentoo-overlay/raw/branch/master/peeweep-overlay.conf -O /etc/portage/repos.conf/peeweep-overlay.conf
-  emerge --sync
+  sudo eselect repository add peeweep git https://codeberg.org/peeweep/gentoo-overlay.git
   echo '*/*::peeweep ~amd64' > /etc/portage/package.accept_keywords/peeweep
