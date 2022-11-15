@@ -12,7 +12,10 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND=""
+DEPEND="
+	sys-fs/fuse:0
+	dev-libs/nss
+"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
