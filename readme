@@ -1,6 +1,4 @@
 peeweep's overlay
 
 How to use:
-
   sudo eselect repository add peeweep git https://code.0x0.ee/peeweep/gentoo-overlay.git
-  echo '*/*::peeweep ~amd64' > /etc/portage/package.accept_keywords/peeweep
