@@ -6,14 +6,9 @@ EAPI=8
 inherit cmake
 
 DESCRIPTION="Super Symlink Manager"
-HOMEPAGE="https://github.com/peeweep/supersm"
-if [[ "${PV}" != *9999 ]] ; then
-	SRC_URI="https://github.com/peeweep/supersm/archive/${PV}.tar.gz -> ${P}.tar.gz"
-	S="${WORKDIR}/${P}"
-else
-	inherit git-r3
-	EGIT_REPO_URI="https://github.com/peeweep/supersm"
-fi
+HOMEPAGE="https://code.0x0.ee/peeweep/supersm"
+SRC_URI="https://code.0x0.ee/peeweep/supersm/archive/${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${P}"
 
 LICENSE="MIT"
 SLOT="0"
