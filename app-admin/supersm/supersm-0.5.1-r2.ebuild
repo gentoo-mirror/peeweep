@@ -8,7 +8,7 @@ inherit cmake
 DESCRIPTION="Super Symlink Manager"
 HOMEPAGE="https://code.0x0.ee/peeweep/supersm"
 SRC_URI="https://code.0x0.ee/peeweep/supersm/archive/${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${P}"
+S="${WORKDIR}/${PN}"
 
 LICENSE="MIT"
 SLOT="0"
