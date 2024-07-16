@@ -11,7 +11,7 @@ SRC_URI="https://github.com/lanthora/candy/archive/refs/tags/v${PV}.tar.gz -> ${
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~loong ~mips ~riscv"
+KEYWORDS="~amd64 ~arm ~arm64 ~mips"
 
 DEPEND="
 	dev-libs/poco
