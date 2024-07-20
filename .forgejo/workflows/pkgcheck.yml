@@ -1,0 +1,25 @@
+# https://github.com/microcai/gentoo-zh/blob/master/.github/workflows/pkgcheck-checks-on-pr.yml
+name: pkgcheck
+on:
+  # workflow_dispatch:
+  push:
+
+jobs:
+  check-changed-ebuilds:
+    name: check changed ebuilds
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/peeweep/gentoo-testing:master
+
+    steps:
+      - name: Sync main tree
+        run: eix-sync -a
+      - name: Setup node
+        uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          ref: master
+      - name: Pkgcheck scan latest commit
+        run: pkgcheck scan --exit error --commits
