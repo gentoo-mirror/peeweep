@@ -1,0 +1,9 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+dev-python/nvchecker:ini - convert your old configuration files from ini to toml
+dev-python/nvchecker:notify - enable nvchecker-notify support
+net-proxy/mihomo:caps - Enable caps support for sys-apps/openrc
+net-proxy/mihomo:gvisor - Enable TUN stack support for gvisor
+net-proxy/mihomo:systemd - Enable systemd support
