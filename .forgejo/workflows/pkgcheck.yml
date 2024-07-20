@@ -14,12 +14,8 @@ jobs:
     steps:
       - name: Sync main tree
         run: eix-sync -a
-      - name: Setup node
-        uses: actions/setup-node@v4
       - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-          ref: master
-      - name: Pkgcheck scan latest commit
-        run: pkgcheck scan --exit error --commits
+        run: |
+          git clone ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY} --depth=1 .
+      - name: Pkgcheck scan
+        run: pkgcheck scan --exit error .
