@@ -16,6 +16,7 @@ jobs:
         run: eix-sync -a
       - name: Checkout
         run: |
-          git clone ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY} --depth=1 .
+          git clone ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY} .
+          git checkout ${GITHUB_SHA}
       - name: Pkgcheck scan
         run: pkgcheck scan --exit error .
