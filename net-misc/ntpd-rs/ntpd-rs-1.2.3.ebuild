@@ -5,8 +5,6 @@
 
 EAPI=8
 
-inherit systemd
-
 CRATES="
 	addr2line@0.22.0
 	adler@1.0.2
@@ -125,7 +123,7 @@ CRATES="
 	zeroize@1.8.1
 "
 
-inherit cargo
+inherit cargo systemd
 
 DESCRIPTION="Full-featured implementation of NTP with NTS support"
 HOMEPAGE="https://github.com/pendulum-project/ntpd-rs"
