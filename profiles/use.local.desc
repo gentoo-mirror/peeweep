@@ -4,6 +4,7 @@
 
 dev-python/nvchecker:ini - convert your old configuration files from ini to toml
 dev-python/nvchecker:notify - enable nvchecker-notify support
+net-misc/ntpd-rs:metrics - Enable metrics support
 net-proxy/mihomo:caps - Enable caps support for sys-apps/openrc
 net-proxy/mihomo:gvisor - Enable TUN stack support for gvisor
 net-proxy/mihomo:systemd - Enable systemd support
