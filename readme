@@ -6,4 +6,4 @@ How to use:
 
   or:
 
-  sudo eselect repository add peeweep git https://code.0x0.ee/peeweep/gentoo-overlay.git
+  sudo eselect repository add peeweep git https://forgejo.dream-universe.org/peeweep/gentoo-overlay.git
