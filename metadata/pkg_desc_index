@@ -12,6 +12,6 @@ net-analyzer/nali 0.8.1 0.8.1_p20240512: An offline tool for querying IP geograp
 net-dns/dnslookup 1.11.1: Simple command line utility to make DNS lookups to the specified server
 net-dns/dog 0.1.0_p20211007: A command-line DNS client
 net-misc/ntpd-rs 1.2.3: Full-featured implementation of NTP with NTS support
-net-proxy/mihomo 1.18.6-r1: Another Clash Kernel, formerly Clash.Meta
+net-proxy/mihomo 1.18.7: Another Clash Kernel, formerly Clash.Meta
 net-vpn/candy 5.10.1: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/tailscale 1.70.0: Tailscale vpn client
