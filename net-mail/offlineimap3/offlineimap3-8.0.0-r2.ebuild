@@ -33,7 +33,7 @@ distutils_enable_tests pytest
 
 PATCHES=(
 	"${FILESDIR}/${P}-sqlite-threadsafety.patch"
-	"${FILESDIR}/${P}-py312-compat"
+	"${FILESDIR}/${P}-py312-compat.patch"
 )
 
 src_prepare() {
