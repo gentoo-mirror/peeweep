@@ -31,7 +31,10 @@ BDEPEND="
 
 distutils_enable_tests pytest
 
-PATCHES=( "${FILESDIR}/${P}-sqlite-threadsafety.patch" )
+PATCHES=(
+	"${FILESDIR}/${P}-sqlite-threadsafety.patch"
+	"${FILESDIR}/${P}-py312-compat"
+)
 
 src_prepare() {
 	sed -i "/^__version__/ s/\"\(.*\)\"/\"${PV}\"/" offlineimap/__init__.py
