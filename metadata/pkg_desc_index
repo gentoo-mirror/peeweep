@@ -6,11 +6,14 @@ acct-user/ntpd-rs 0: user for ntpd-rs daemon
 acct-user/ntpd-rs-observe 0: user for ntpd-rs-observe daemon
 app-admin/supersm 0.5.1-r3: Super Symlink Manager
 app-crypt/cfssl 1.6.5: Cloudflare's PKI and TLS toolkit
+dev-python/imaplib2 3.6: Threaded Python IMAP4 client
 dev-python/nvchecker 2.15.1: nvchecker is for checking if a new version of some software has been released
+dev-python/rfc6555 0.1.0: Implementation of the Happy Eyeballs Algorithm described in RFC 6555.
 dev-vcs/gitoxide 0.37.0: A command-line application for interacting with git repositories
 net-analyzer/nali 0.8.1 0.8.1_p20240512: An offline tool for querying IP geographic information and CDN provider.
 net-dns/dnslookup 1.11.1: Simple command line utility to make DNS lookups to the specified server
 net-dns/dog 0.1.0_p20211007: A command-line DNS client
+net-mail/offlineimap3 8.0.0-r2: Powerful IMAP/Maildir synchronization and reader support
 net-misc/ntpd-rs 1.2.3: Full-featured implementation of NTP with NTS support
 net-proxy/mihomo 1.18.7: Another Clash Kernel, formerly Clash.Meta
 net-vpn/candy 5.10.1: A reliable, low-latency, and anti-censorship virtual private network
