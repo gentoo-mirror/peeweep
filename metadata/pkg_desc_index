@@ -13,6 +13,7 @@ dev-vcs/gitoxide 0.37.0: A command-line application for interacting with git rep
 net-analyzer/nali 0.8.1 0.8.1_p20240512: An offline tool for querying IP geographic information and CDN provider.
 net-dns/dnslookup 1.11.1: Simple command line utility to make DNS lookups to the specified server
 net-dns/dog 0.1.0_p20211007: A command-line DNS client
+net-dns/q 0.19.2-r1: A tiny command line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
 net-mail/offlineimap3 8.0.0-r2: Powerful IMAP/Maildir synchronization and reader support
 net-misc/ntpd-rs 1.2.3: Full-featured implementation of NTP with NTS support
 net-proxy/mihomo 1.18.7: Another Clash Kernel, formerly Clash.Meta
