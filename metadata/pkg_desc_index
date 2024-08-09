@@ -8,4 +8,4 @@ dev-python/rfc6555 0.1.0: Implementation of the Happy Eyeballs Algorithm describ
 net-analyzer/nali 0.8.1 0.8.1_p20240512: An offline tool for querying IP geographic information and CDN provider.
 net-mail/offlineimap3 8.0.0-r2: Powerful IMAP/Maildir synchronization and reader support
 net-misc/ntpd-rs 1.2.3: Full-featured implementation of NTP with NTS support
-net-vpn/candy 5.10.1: A reliable, low-latency, and anti-censorship virtual private network
+net-vpn/candy 5.10.3: A reliable, low-latency, and anti-censorship virtual private network
