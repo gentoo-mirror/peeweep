@@ -3,9 +3,6 @@ acct-group/ntpd-rs-observe 0: System group: ntpd-rs-observe
 acct-user/ntpd-rs 0: user for ntpd-rs daemon
 acct-user/ntpd-rs-observe 0: user for ntpd-rs-observe daemon
 app-admin/supersm 0.5.1-r3: Super Symlink Manager
-dev-python/imaplib2 3.6: Threaded Python IMAP4 client
-dev-python/rfc6555 0.1.0: Implementation of the Happy Eyeballs Algorithm described in RFC 6555.
-net-analyzer/nali 0.8.1 0.8.1_p20240512: An offline tool for querying IP geographic information and CDN provider.
-net-mail/offlineimap3 8.0.0-r2: Powerful IMAP/Maildir synchronization and reader support
+net-analyzer/nali 0.8.1_p20240512: An offline tool for querying IP geographic information and CDN provider.
 net-misc/ntpd-rs 1.2.3: Full-featured implementation of NTP with NTS support
 net-vpn/candy 5.10.3: A reliable, low-latency, and anti-censorship virtual private network
