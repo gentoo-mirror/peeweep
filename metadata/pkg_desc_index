@@ -1,6 +1,2 @@
-acct-group/ntpd-rs 0: System group: ntpd-rs
-acct-group/ntpd-rs-observe 0: System group: ntpd-rs-observe
-acct-user/ntpd-rs 0: user for ntpd-rs daemon
-acct-user/ntpd-rs-observe 0: user for ntpd-rs-observe daemon
 app-admin/supersm 0.5.1-r4: Super Symlink Manager
-net-misc/ntpd-rs 1.2.3: Full-featured implementation of NTP with NTS support
+net-misc/geo 1.1: An easy way to manage all your Geo resources
