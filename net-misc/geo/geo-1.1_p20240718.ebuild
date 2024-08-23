@@ -12,6 +12,7 @@ SRC_URI="
 	https://github.com/peeweep/gentoo-go-deps/releases/download/${P}/${P}-deps.tar.xz
 "
 
+S="${WORKDIR}/geo-${EGIT_COMMIT}"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
