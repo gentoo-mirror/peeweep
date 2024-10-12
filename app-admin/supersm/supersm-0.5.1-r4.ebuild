@@ -12,7 +12,7 @@ S="${WORKDIR}/${P}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~riscv"
+KEYWORDS="amd64 arm64 ~riscv"
 
 DEPEND="dev-libs/boost:="
 RDEPEND="${DEPEND}"
