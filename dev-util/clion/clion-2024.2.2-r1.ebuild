@@ -78,7 +78,7 @@ src_prepare() {
 	patchelf --set-rpath '$ORIGIN' "jbr/lib/libjcef.so" || die
 	patchelf --set-rpath '$ORIGIN' "jbr/lib/jcef_helper" || die
 	patchelf --set-rpath '$ORIGIN/../lib' "bin/clang/linux/x64/libclazyPlugin.so" || die
-	patchelf --set-rpath '$ORIGIN/../lib' "bin/clang/linux/x64/libclazyPlugin.so.19git" || die
+	patchelf --set-rpath '$ORIGIN/../lib' "bin/clang/linux/x64/libclazyPlugin.so.19.0git" || die
 }
 
 src_install() {
