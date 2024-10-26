@@ -369,6 +369,7 @@ SRC_URI="
 	${CARGO_CRATE_URIS}
 "
 
+S="${WORKDIR}/${PN}-${EGIT_COMMIT}"
 LICENSE="MIT"
 # Dependent crate licenses
 LICENSE+=" Apache-2.0 BSD-2 BSD ISC MIT MPL-2.0 Unicode-DFS-2016 ZLIB"
