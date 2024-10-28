@@ -15,7 +15,7 @@ SRC_URI="https://github.com/zen-browser/desktop/releases/download/${MY_PV}/${MY_
 S="${WORKDIR}"
 LICENSE="MPL-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 RDEPEND="
 	dev-libs/expat
