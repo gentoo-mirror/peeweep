@@ -3,7 +3,9 @@ peeweep's overlay
 How to use:
 
   sudo eselect repository enable peeweep
+  sudo emerge --sync peeweep
 
   or:
 
   sudo eselect repository add peeweep git https://github.com/peeweep/gentoo-overlay.git
+  sudo emerge --sync peeweep
