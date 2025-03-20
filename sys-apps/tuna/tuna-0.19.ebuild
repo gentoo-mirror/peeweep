@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{10..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
-DESCRIPTION="program for tuning running processes"
+DESCRIPTION="Thread and IRQ affinity setting GUI and cmd line tool"
 HOMEPAGE="https://www.kernel.org/pub/software/utils/tuna"
 SRC_URI="https://www.kernel.org/pub/software/utils/${PN}/${P}.tar.xz"
 
