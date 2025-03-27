@@ -9,10 +9,9 @@ DESCRIPTION="The ability to support openEuler power consumption control"
 HOMEPAGE="https://gitee.com/openeuler/powerapi/"
 SRC_URI="https://gitee.com/src-openeuler/powerapi/raw/master/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MulanPSL-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
-
 
 src_configure() {
 	local mycmakeargs=(
