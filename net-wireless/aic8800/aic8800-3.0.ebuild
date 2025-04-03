@@ -3,20 +3,18 @@
 
 EAPI="8"
 
-inherit linux-mod-r1 udev
+inherit linux-mod-r1
 
-DESCRIPTION="aic8800 driver for AICSemi AIC8800/8801/8800DC/8800DW/8800FC Wifi/Bluetooth"
-HOMEPAGE="https://www.aicsemi.com/ https://linux.brostrend.com/troubleshooting/source-code/"
-
+DESCRIPTION="Aicsemi aic8800 Wi-Fi driver"
+HOMEPAGE="https://github.com/radxa-pkg/aic8800"
 SRC_URI="https://github.com/radxa-pkg/aic8800/archive/refs/tags/3.0+git20240327.3561b08f-4.tar.gz"
 
+S="${WORKDIR}/aic8800-3.0-git20240327.3561b08f-4/src/USB/driver_fw/drivers/aic8800"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64"
 
 CONFIG_CHECK="~MAC80211 ~BT_HCIBTUSB"
-
-S="${WORKDIR}/aic8800-3.0-git20240327.3561b08f-4/src/USB/driver_fw/drivers/aic8800"
 
 src_prepare(){
 	pushd ${WORKDIR}/aic8800-3.0-git20240327.3561b08f-4
