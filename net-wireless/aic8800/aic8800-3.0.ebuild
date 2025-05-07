@@ -12,7 +12,7 @@ SRC_URI="https://github.com/radxa-pkg/aic8800/archive/refs/tags/3.0+git20240327.
 S="${WORKDIR}/aic8800-3.0-git20240327.3561b08f-4/src/USB/driver_fw/drivers/aic8800"
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 CONFIG_CHECK="~MAC80211 ~BT_HCIBTUSB"
 
