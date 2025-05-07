@@ -11,7 +11,7 @@ SRC_URI="https://gitee.com/src-openeuler/powerapi/raw/master/${P}.tar.gz"
 
 LICENSE="MulanPSL-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 src_configure() {
 	local mycmakeargs=(
