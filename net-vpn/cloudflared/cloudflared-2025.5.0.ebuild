@@ -15,3 +15,18 @@ SRC_URI="
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
+
+RDEPEND="!net-vpn/cloudflared-bin"
+
+
+src_compile(){
+	local ldflags="\
+		-X 'main.Version=${PV}' \
+		-X 'main.BuildTime=$(date +'%F %T %z')'
+		-w -s"
+	ego build -trimpath -ldflags "${ldflags}" ./cmd/cloudflared
+}
+
+src_install(){
+	dobin cloudflared
+}
