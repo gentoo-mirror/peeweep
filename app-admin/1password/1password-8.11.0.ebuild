@@ -70,8 +70,8 @@ src_install() {
 	# see https://github.com/electron/electron/issues/17972
 	fperms 4755 /opt/1Password/chrome-sandbox
 
-	fperms g+s /opt/1Password/1Password-BrowserSupport
 	fowners root:onepassword /opt/1Password/1Password-BrowserSupport
+	fperms g+s /opt/1Password/1Password-BrowserSupport
 
 	dosym ../../opt/1Password/1password /usr/bin/1password
 }
