@@ -21,6 +21,16 @@ SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="mirror strip bindist"
 
+DEPEND="
+	acct-group/onepassword
+	app-crypt/gnupg
+	media-libs/alsa-lib
+	net-misc/curl
+	x11-libs/gtk+:3
+	x11-libs/libxkbcommon
+"
+RDEPEND="${DEPEND}"
+
 QA_PREBUILT="*"
 
 src_configure() {
