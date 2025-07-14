@@ -1,5 +1,3 @@
-acct-group/onepassword 0: System group: onepassword
-app-admin/1password 8.11.0: Password manager and secure wallet
 app-admin/supersm 0.5.1-r4: Super Symlink Manager
 dev-libs/powerapi 1.1.0: The ability to support openEuler power consumption control
 sys-apps/tuna 0.19: Thread and IRQ affinity setting GUI and cmd line tool
