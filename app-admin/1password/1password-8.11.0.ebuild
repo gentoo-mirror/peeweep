@@ -21,6 +21,16 @@ SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="mirror strip bindist"
 
+DEPEND="
+	acct-group/onepassword
+	app-crypt/gnupg
+	media-libs/alsa-lib
+	net-misc/curl
+	x11-libs/gtk+:3
+	x11-libs/libxkbcommon
+"
+RDEPEND="${DEPEND}"
+
 QA_PREBUILT="*"
 
 src_configure() {
@@ -59,6 +69,9 @@ src_install() {
 	# Chrome-sandbox requires the setuid bit to be specifically set.
 	# see https://github.com/electron/electron/issues/17972
 	fperms 4755 /opt/1Password/chrome-sandbox
+
+	fperms g+s /opt/1Password/1Password-BrowserSupport
+	fowners root:onepassword /opt/1Password/1Password-BrowserSupport
 
 	dosym ../../opt/1Password/1password /usr/bin/1password
 }
