@@ -6,7 +6,7 @@ EAPI=8
 BASHCOMP_P=bashcomp-2.0.3
 PYTHON_COMPAT=( python3_{10..13} )
 
-inherit python-any-r1
+inherit autotools python-any-r1
 
 DESCRIPTION="Programmable Completion for bash"
 HOMEPAGE="https://github.com/scop/bash-completion"
@@ -44,6 +44,7 @@ PDEPEND="
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-2.14.0-optimize-kernel-modules.patch
+	"${FILESDIR}"/${PN}-2.16.0-libsecret-completion.patch
 )
 
 strip_completions() {
@@ -93,6 +94,8 @@ src_prepare() {
 	fi
 
 	default
+	# Only needed for ${PN}-2.16.0-libsecret-completion.patch
+	eautoreconf
 }
 
 src_test() {
