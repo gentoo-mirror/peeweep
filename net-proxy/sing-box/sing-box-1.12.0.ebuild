@@ -14,7 +14,7 @@ LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="+quic grpc +dhcp +wireguard +ech +utls +reality +acme +clash-api v2ray-api +gvisor tor"
+IUSE="+quic grpc +dhcp +wireguard +utls +acme +clash-api v2ray-api +gvisor tor +tailscale"
 
 src_compile() {
 	local mybuildtags
@@ -22,14 +22,13 @@ src_compile() {
 	use grpc && mybuildtags+="with_grpc,"
 	use dhcp && mybuildtags+="with_dhcp,"
 	use wireguard && mybuildtags+="with_wireguard,"
-	use ech && mybuildtags+="with_ech,"
 	use utls && mybuildtags+="with_utls,"
-	use reality && mybuildtags+="with_reality_server,"
 	use acme && mybuildtags+="with_acme,"
 	use clash-api && mybuildtags+="with_clash_api,"
 	use v2ray-api && mybuildtags+="with_v2ray_api,"
 	use gvisor && mybuildtags+="with_gvisor,"
 	use tor && mybuildtags+="with_embedded_tor,"
+	use tailscale && mybuildtags+="with_tailscale,"
 
 	ego build -tags "${mybuildtags%,}" \
 		-ldflags "-X github.com/sagernet/sing-box/constant.Version=${PV}" \
