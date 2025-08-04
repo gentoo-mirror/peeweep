@@ -1,4 +1,4 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,6 +13,12 @@ SRC_URI+=" https://github.com/gentoo-zh/gentoo-deps/releases/download/${P}/${P}-
 LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64"
+
+RDEPEND="
+	acct-group/sing-box
+	acct-user/sing-box
+"
+DEPEND="${RDEPEND}"
 
 IUSE="+quic grpc +dhcp +wireguard +utls +acme +clash-api v2ray-api +gvisor tor +tailscale"
 
@@ -40,6 +46,12 @@ src_install() {
 
 	insinto /etc/sing-box
 	newins release/config/config.json config.json.example
+
+	insinto /usr/share/polkit-1/rules.d
+	doins release/config/sing-box.rules
+
+	insinto /usr/share/dbus-1/system.d
+	doins release/config/sing-box-split-dns.xml
 
 	systemd_dounit release/config/sing-box{,@}.service
 	newinitd release/config/sing-box.initd sing-box
