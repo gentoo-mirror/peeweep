@@ -14,13 +14,14 @@ LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64"
 
+IUSE="+quic grpc +dhcp +wireguard +utls +acme +clash-api v2ray-api +gvisor tor +tailscale"
+RESTRICT="test"
+
 RDEPEND="
 	acct-group/sing-box
 	acct-user/sing-box
 "
 DEPEND="${RDEPEND}"
-
-IUSE="+quic grpc +dhcp +wireguard +utls +acme +clash-api v2ray-api +gvisor tor +tailscale"
 
 src_compile() {
 	local mybuildtags
