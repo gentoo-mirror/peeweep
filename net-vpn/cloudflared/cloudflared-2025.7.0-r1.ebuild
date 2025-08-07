@@ -14,6 +14,9 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
+# "make test" fails since cloudflared-2024.12.1, and fails with network-sanbox
+RESTRICT="test"
+
 src_compile(){
 	local ldflags="
 		-X main.Version=${PV}
