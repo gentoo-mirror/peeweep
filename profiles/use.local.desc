@@ -2,7 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-shells/bash-completion:eselect - Support blacklisting of completions via 'eselect bashcomp'. This enables custom Gentoo patching of upstream completion loader.
 net-proxy/sing-box:acme - Build with ACME TLS certificate issuer support
 net-proxy/sing-box:clash-api - Build with Clash API support
 net-proxy/sing-box:dhcp - Build with DHCP support
