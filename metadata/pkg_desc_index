@@ -1,5 +1,5 @@
 app-admin/supersm 0.5.1-r4: Super Symlink Manager
 dev-libs/powerapi 1.1.0: The ability to support openEuler power consumption control
 net-proxy/sing-box 1.12.0-r1: The universal proxy platform
-net-vpn/cloudflared 2025.7.0-r1: Cloudflare Tunnel client (formerly Argo Tunnel)
+net-vpn/cloudflared 2025.8.0: Cloudflare Tunnel client (formerly Argo Tunnel)
 sys-apps/tuna 0.19: Thread and IRQ affinity setting GUI and cmd line tool
