@@ -15,6 +15,8 @@ HOMEPAGE="https://sing-box.sagernet.org/ https://github.com/SagerNet/sing-box"
 SRC_URI="https://github.com/SagerNet/sing-box/archive/refs/tags/v${_PV}.tar.gz -> ${P}.tar.gz"
 SRC_URI+=" https://github.com/gentoo-zh/gentoo-deps/releases/download/${P}/${P}-vendor.tar.xz"
 
+S="${WORKDIR}/${PN}-${_PV}"
+
 LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64"
