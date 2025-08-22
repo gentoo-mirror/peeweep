@@ -8,7 +8,6 @@ inherit go-module
 DESCRIPTION="Cloudflare Tunnel client (formerly Argo Tunnel)"
 HOMEPAGE="https://github.com/cloudflare/cloudflared"
 SRC_URI="https://github.com/cloudflare/cloudflared/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://github.com/Gentoo-zh/gentoo-deps/releases/download/${P}/${P}-vendor.tar.xz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
