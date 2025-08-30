@@ -2,14 +2,3 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-net-proxy/sing-box:acme - Build with ACME TLS certificate issuer support
-net-proxy/sing-box:clash-api - Build with Clash API support
-net-proxy/sing-box:dhcp - Build with DHCP support
-net-proxy/sing-box:grpc - Build with standard gRPC support
-net-proxy/sing-box:gvisor - Build with gVisor support
-net-proxy/sing-box:quic - Build with QUIC support
-net-proxy/sing-box:tailscale - Build with tailscale support
-net-proxy/sing-box:tor - Build with embedded Tor support
-net-proxy/sing-box:utls - Build with uTLS support for TLS outbound
-net-proxy/sing-box:v2ray-api - Build with V2Ray API support
-net-proxy/sing-box:wireguard - Build with WireGuard support
